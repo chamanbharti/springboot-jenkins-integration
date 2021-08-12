@@ -19,6 +19,7 @@ public class SpringbootJenkinsIntegrationApplication {
 	public void init() {
 		log.info("Application started...");
 	}
+	
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootJenkinsIntegrationApplication.class, args);
 	}
