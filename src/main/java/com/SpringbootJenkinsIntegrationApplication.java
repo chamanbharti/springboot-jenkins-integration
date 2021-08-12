@@ -17,7 +17,7 @@ public class SpringbootJenkinsIntegrationApplication {
 	
 	@PostConstruct
 	public void init() {
-		log.info("Application started...");
+		log.info("Application started......");
 	}
 	
 	public static void main(String[] args) {
