@@ -24,9 +24,11 @@ public class SpringbootJenkinsIntegrationApplication {
 		SpringApplication.run(SpringbootJenkinsIntegrationApplication.class, args);
 	}
 	
-//	/*
-//	 * @GetMapping("/ping") public String message() { return
-//	 * "Wao!! Application Deployed successfully in SAP Cloud.."; }
-//	 */
+	
+	 @GetMapping("/ping") 
+	 public String message() { 
+		 return "Wao!! Application Deployed successfully in SAP Cloud.."; 
+	 }
+	 
 
 }
