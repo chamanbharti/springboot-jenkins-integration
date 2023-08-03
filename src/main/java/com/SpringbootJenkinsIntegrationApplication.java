@@ -1,6 +1,7 @@
 package com;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,6 +29,10 @@ public class SpringbootJenkinsIntegrationApplication {
 	 @GetMapping("/ping") 
 	 public String message() { 
 		 return "Wao!! Application Deployed successfully in SAP Cloud.."; 
+	 }
+	 @PreDestroy
+	public void destroy(){
+		log.info("application destroyed...");
 	 }
 	 
 
