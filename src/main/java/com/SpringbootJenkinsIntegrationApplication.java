@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-@RestController
 public class SpringbootJenkinsIntegrationApplication {
 
 	Logger log = LoggerFactory.getLogger(SpringbootJenkinsIntegrationApplication.class);
@@ -26,10 +25,7 @@ public class SpringbootJenkinsIntegrationApplication {
 	}
 	
 	
-	 @GetMapping("/ping") 
-	 public String message() { 
-		 return "Wao!! Application Deployed successfully in SAP Cloud.."; 
-	 }
+
 	 @PreDestroy
 	public void destroy(){
 		log.info("application destroyed...");
